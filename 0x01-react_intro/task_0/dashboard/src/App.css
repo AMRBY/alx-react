@@ -1,0 +1,11 @@
+.App-header {
+  color: red;
+}
+.App-body {
+  color: green;
+}
+.App-footer {
+  color: blue;
+  text-align: center;  
+  text-decoration: italic;
+}
