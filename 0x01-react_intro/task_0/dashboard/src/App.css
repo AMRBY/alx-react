@@ -1,11 +1,20 @@
 .App-header {
-  color: red;
+  display: inline;
+  color: #d73953;
 }
 .App-body {
-  color: green;
+  color: black;
 }
 .App-footer {
+  display: relative;
   color: blue;
   text-align: center;  
-  text-decoration: italic;
+  font-style: italic;
+  position: bottom;
+}
+hr {
+  color: #d73953;
+}
+img {
+  display: inline;
 }
