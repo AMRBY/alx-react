@@ -1,25 +1,30 @@
-import React from 'react';
+import holberton from "./holberton-logo.jpg";
+import {getFullYear, getFooterCopy} from "./utils";
+import './App.css';
 
 function App() {
   return (
-    <body>
-     <header>
+     <div className="App">
       <div className="App-header">
-	<img src="./holberton-logo.jpg" alt="" width="100" height="100"></img>
+	<img src={holberton} alt="logo" />
 	<h1>School dashboard</h1>
       </div>
-     </header>
      <hr/>
      <div className="App-body">
-	<p>Login to access the full dashboard</p>
+	<p>
+	  Login to access the full dashboard
+	  <label htmlFor="email">email</label>
+	  <input type="email" name="email"></input>
+	  <label htmlFor="password">password</label>
+	  <input type="password" name="password"></input>
+	  <button>OK</button>
+	</p>
      </div>
      <hr/>
-     <footer>
       <div className="App-footer">
-	<p>Copyright 2020 - holberton School</p>
+	<p>Copyright {getFullYear()} - {getFooterCopy()}</p>
       </div>
-     </footer>
-    </body>
+     </div>
   );
 }
 
