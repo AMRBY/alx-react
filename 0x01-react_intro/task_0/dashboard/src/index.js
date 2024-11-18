@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { getFullYear, getFooterCopy } from './utils';
 import { Notifications } from "./Notifications"
 
 ReactDOM.render(<App />, document.getElementById('root'));
