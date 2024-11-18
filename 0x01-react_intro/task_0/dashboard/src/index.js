@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
-import { Notifications } from "./Notifications"
+import Notifications from "./Notifications";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<Notifications />, document.getElementById("root-notifications"));
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
+
+const rootNotification = createRoot(document.getElementById("root-notifications"));
+rootNotification.render(<Notifications />);

@@ -1,20 +1,36 @@
+html, .App {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 .App-header {
-  display: inline;
   color: #d73953;
+  border-bottom: 4px solid #d73953;
 }
 .App-body {
   color: black;
+  flex: 1;
 }
 .App-footer {
-  display: relative;
   color: blue;
   text-align: center;  
   font-style: italic;
-  position: bottom;
-}
-hr {
-  color: #d73953;
+  border-top: 3px solid #d73953;
 }
 img {
   display: inline;
+  width: 300px;
+  height: 300px;
+}
+h1 {
+  display: inline;
+  position: absolute;
+  vertical-align: center;
+}
+p{
+  margin-left: 30px;
+}
+label, input, button {
+  margin-left: 10px;
 }
